@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+    background-color: #A3252A;
+}
+
+#company-name {
+    font-family: 'Arimo', 'Open Sans', sans-serif;
+    font-size: 50px;
+    padding: 30px 50px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.tablink {
+    height: 50px;
+    width: 120px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+
+.tablink:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.unactive {
+    display: none;
+}
+
+
+/*-------------------ABOUT US HOMEPAGE-------------------*/
+
+#about-container {
+    margin: 15px 50px;
+    display: flex;
+}
+
+#food-img {
+    width: 650px;
+    height: 650px;
+}
+
+#food-img-div,
+#about-us-div {
+    flex: 1;
+}
+
+#food-img-div {
+    margin-left: 150px;
+}
+
+#about-us-div {
+    margin-top: 75px;
+    margin-right: 200px;
+}
+
+#about-us-div h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about-hr {
+    border-top: none;
+    border-bottom: 3px solid #A3252A;
+    width: 500px;
+    margin: 5px auto auto auto;
+}
+
+#about-us-div p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+
+/*-------------------MENU PAGE-------------------*/
+#menu-div {
+    grid-area: menu-div;
+}
+
+#entrees {
+    grid-area: entrees;
+}
+
+#sides {
+    grid-area: sides;
+}
+
+#desserts {
+    grid-area: desserts;
+}
+
+#drinks {
+    grid-area: drinks;
+}
+
+#menu-container {
+    margin: auto;
+    width: 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    'menu-div menu-div'
+    'entrees drinks'
+    'sides desserts';
+}
+
+#menu-container h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#menu-container hr {
+    border-bottom: 3px solid #A3252A;
+}
+
+#menu-container h2 {
+    margin: 10px auto 5px auto;
+    font-size: 30px;
+}
+
+#menu-container ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/*-------------------CONTACT PAGE-------------------*/
+
+#contact-container {
+    margin: 15px 50px;
+    display: flex;
+}
+
+#contact-img {
+    width: 650px;
+    height: 650px;
+}
+
+#contact-img-div,
+#contact-div {
+    flex: 1;
+}
+
+#contact-img-div {
+    margin-left: 200px;
+}
+
+#contact-div {
+    margin-top: 75px;
+    margin-right: 250px;
+}
+
+#contact-div h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#contact-hr {
+    border-top: none;
+    border-bottom: 3px solid #A3252A;
+    width: 500px;
+    margin: 5px auto auto auto;
+}
+
+#contact-info-summary {
+    grid-area: contact;
+}
+
+#phone-number-left {
+    grid-area: phone-left;
+    font-weight: bold;
+}
+
+#phone-number-right {
+    grid-area: phone-right;
+}
+
+#email-left {
+    grid-area: email-left;
+    font-weight: bold;
+}
+
+#email-right {
+    grid-area: email-right;
+}
+
+#address-left {
+    grid-area: address-left;
+    font-weight: bold;
+}
+
+#address-right {
+    grid-area: address-right;
+}
+
+#contact-info-div {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'contact contact'
+    'phone-left phone-right'
+    'email-left email-right'
+    'address-left address-right';
+    gap: 10px;
+    font-size: 20px;
+}
